@@ -11,7 +11,7 @@ inputs to be entered manually for testing and demonstration.
 **Live Tinkercad Simulation** 
 https://www.tinkercad.com/embed/j4i6qGCD1pO
 
-About peoject : https://uhashini.github.io/Solar-Tracking-System/
+About project : https://uhashini.github.io/Solar-Tracking-System/
 
 ##  Features
 
