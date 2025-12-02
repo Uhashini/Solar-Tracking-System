@@ -20,12 +20,12 @@
       justify-content: center;
       background: #0f172a;
       color: #e5e7eb;
+      padding: 20px;
     }
 
     .page {
       width: 100%;
       max-width: 960px;
-      padding: 24px;
     }
 
     h1 {
@@ -41,12 +41,12 @@
     .iframe-wrapper {
       position: relative;
       width: 100%;
-      /* 16:9 aspect ratio */
       padding-top: 56.25%;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
       background: #020617;
+      margin-bottom: 24px;
     }
 
     .iframe-wrapper iframe {
@@ -55,6 +55,32 @@
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin: 20px 0 10px;
+      font-weight: 600;
+      color: #f8fafc;
+    }
+
+    .content-box {
+      background: #1e293b;
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+
+    li {
+      margin-bottom: 6px;
     }
 
     .footer-note {
@@ -77,7 +103,7 @@
   <div class="page">
     <h1>Solar Tracking System Simulation</h1>
     <p class="description">
-      Interactive Tinkercad simulation of an Arduino-based solar tracking system.
+      Interactive Tinkercad simulation of an Arduino-based dual LDR solar tracking system with temperature monitoring.
     </p>
 
     <div class="iframe-wrapper">
@@ -88,8 +114,49 @@
       ></iframe>
     </div>
 
+    <!-- Project Details Section -->
+    <h2 class="section-title">📘 Project Overview</h2>
+    <div class="content-box">
+      This project simulates a <strong>Solar Tracking System</strong> using two LDR sensors to detect light intensity and adjust a servo motor to point toward the brighter light source. The system replicates how solar panels track the sun to optimize power generation.
+    </div>
+
+    <h2 class="section-title">⚙️ Features</h2>
+    <div class="content-box">
+      <ul>
+        <li>Dual LDR-based sunlight detection</li>
+        <li>Automatic servo positioning (0°–180°)</li>
+        <li>Night Mode activation when light is low</li>
+        <li>Temperature sensor support (LM35 simulation)</li>
+        <li>16x2 I2C LCD display output</li>
+        <li>Fully interactive simulation using Tinkercad</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">🧠 How It Works</h2>
+    <div class="content-box">
+      <ul>
+        <li>The two LDR sensors measure light intensity on both sides.</li>
+        <li>The servo rotates toward the side with higher light intensity.</li>
+        <li>If both LDR readings are below the threshold, the system enters <strong>Night Mode</strong>.</li>
+        <li>The temperature sensor converts analog voltage to °C and displays it on the LCD.</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">📡 Hardware Used</h2>
+    <div class="content-box">
+      <ul>
+        <li>Arduino UNO</li>
+        <li>SG90 Servo Motor</li>
+        <li>2 × LDR Sensors</li>
+        <li>LM35 Temperature Sensor</li>
+        <li>16x2 I2C LCD Display</li>
+        <li>Resistors & Jumper Wires</li>
+      </ul>
+    </div>
+
     <p class="footer-note">
-      Simulation hosted on <a href="https://www.tinkercad.com" target="_blank" rel="noopener noreferrer">Tinkercad</a>.
+      Simulation hosted on
+      <a href="https://www.tinkercad.com" target="_blank" rel="noopener noreferrer">Tinkercad</a>.
     </p>
   </div>
 </body>
