@@ -77,5 +77,12 @@ Run:
 File Structure
 ```
 ├── solar_tracker.c    # Main simulation code
-└── README.md          # Project documentation```
+└── README.md          # Project documentation
+```
+At angle 88, 0, nightmode on
+
+<img width="796" height="377" alt="Screenshot 2025-12-02 164353" src="https://github.com/user-attachments/assets/6987b9dd-01c0-455a-8924-3575421e8edd" />
+<img width="852" height="379" alt="image" src="https://github.com/user-attachments/assets/17d742f1-dc33-49e7-819d-8c352f0da016" />
+<img width="821" height="396" alt="Screenshot 2025-12-02 164643" src="https://github.com/user-attachments/assets/efc3aa13-a338-46bf-bbea-aa91c5f19763" />
+
 
